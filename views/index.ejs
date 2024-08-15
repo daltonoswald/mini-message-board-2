@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title> <%= title %> </title>
+    </head>
+    <body>
+        <% for (let i = 0; i < messages.length; i++) { %>
+                <p><%= messages[i].text %></p>
+                <p>By <%= messages[i].user %></p>
+                <p>Posted on <%= messages[i].added %></p>
+                <a href="/<%= i %>">Open</a>
+        <% } %>
+        <%- include('form') %>
+    </body>
+</html>
