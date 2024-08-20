@@ -7,6 +7,6 @@ router.get('/', indexController.index);
 
 router.post('/new', indexController.newMessage);
 
-router.get('/:index', indexController.detailedMessage);
+router.get('/messages/:index', indexController.detailedMessage);
 
 module.exports = router;
